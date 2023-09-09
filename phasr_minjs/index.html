@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="phaser.min.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+        <script type="text/javascript" src="scene1.js"></script>
+        <script type="text/javascript" src="scene2.js"></script>
+        <script type="text/javascript" src="button.js"></script>
+    </head>
+    <body>
+    </body>
+    <script>
+        var config = {
+            width: 1500,
+            height: 648,
+            scene: [scene1, scene2],
+            physics: {
+                default: "arcade",
+                arcade:{
+                    debug: false
+                }
+            }
+
+        }
+
+        window.onload = function() {
+        var game = new Phaser.Game(config);
+        }
+    </script>
+</html>
